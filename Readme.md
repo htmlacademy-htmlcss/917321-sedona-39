@@ -2,6 +2,7 @@
 
 - Студент: [Ксения Дудак](https://up.htmlacademy.ru/htmlcss/39/user/917321).
 - Наставник: [Карина Королева](https://htmlacademy.ru/profile/id1526731).
+- Сайт: (https://dxenium.github.io/917321-sedona-39/).
 
 ---
 
