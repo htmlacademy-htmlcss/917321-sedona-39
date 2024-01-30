@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Ксения Дудак](https://up.htmlacademy.ru/htmlcss/39/user/917321).
-* Наставник: `Неизвестно`.
+- Студент: [Ксения Дудак](https://up.htmlacademy.ru/htmlcss/39/user/917321).
+- Наставник: [Карина Королева](https://htmlacademy.ru/profile/id1526731).
 
 ---
 
