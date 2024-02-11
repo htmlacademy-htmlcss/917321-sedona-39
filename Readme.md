@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Ксения Дудак](https://up.htmlacademy.ru/htmlcss/39/user/917321).
-- Наставник: [Карина Королева](https://htmlacademy.ru/profile/id1526731).
+- Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 - Сайт: (https://dxenium.github.io/917321-sedona-39/).
 
 ---
