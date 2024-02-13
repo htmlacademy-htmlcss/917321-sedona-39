@@ -7,20 +7,20 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="navigation-link" href="index.html">
-        <img src="#" alt="Логотип сайта Седона">
+        <img src="images/logo.svg" width="138" height="64" alt="Логотип города Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">
+            <a class="navigation-link navigation-link-current" href="index.html">
               Главная
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href=#>
-              О седоне
+              О Седоне
             </a>
           </li>
           <li class="navigation-item">
@@ -50,7 +50,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-catalog">
+    <main class="main-catalog" data-test="main">
       <header class="catalog-header">
         <h1 class="catalog-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs-list">
@@ -61,7 +61,7 @@
             <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
           </li>
         </ol>
-        <section class="catalog-products">
+        <section class="catalog-products" data-test="filter">
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
@@ -126,7 +126,7 @@
           </form>
         </section>
       </header>
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <h2>
           Найдено гостиниц: <span>38</span>
         </h2>
@@ -155,7 +155,8 @@
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="#" alt="Amara Resort & Spa">
+              <img class="hotel-card-image" src="images/catalog/catalog-hotel-1.jpg" width="300" height="212"
+                alt="Звеёздное небо в горах">
             </a>
             <a tabindex="-1" href="#">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -171,7 +172,8 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="#" alt="Villas at Poco Diablo">
+              <img class="hotel-card-image" src="images/catalog/catalog-hotel-2.jpg" width="300" height="212"
+                alt="Радуга над горами">
             </a>
             <a tabindex="-1" href="#">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -187,7 +189,8 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="#" alt="Desert Quail Inn">
+              <img class="hotel-card-image" src="images/catalog/catalog-hotel-3.jpg" width="300" height="212"
+                alt="Рассвет в горах">
             </a>
             <a tabindex="-1" href="#">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -203,9 +206,9 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="#" alt="GreenTree Inn">
+              <img class="hotel-card-image" src="images/catalog/catalog-hotel-4.jpg" width="300" height="212" alt="Закат и звёзды в горах>
             </a>
-            <a tabindex="-1" href="#">
+            <a tabindex=" -1" href="#">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <p>Гостиница</p>
@@ -239,7 +242,7 @@
           </li>
         </ol>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -250,7 +253,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-list">
         <li class="social-item">
