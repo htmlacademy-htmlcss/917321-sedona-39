@@ -20,7 +20,7 @@ body {
   font-style: normal;
   color: #333333;
   background-color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 .navigation-link,
 .user-navigation-link {
@@ -30,6 +30,20 @@ body {
   color: #000000;
   text-decoration: none;
 }
+.number-of-favorite{
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  font-weight: 400;
+}
+.navigation-button{
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+}
 .hero {
   background-image: url(../images/index-background.jpg);
   background-size: 100% auto;
@@ -37,9 +51,21 @@ body {
   color: inherit;
   background-color: #ffffff;
 }
-.advantages-title,
+.advantages,
+.services,
+.booking {
+  text-align: center;
+}
+.advantages-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
 .services-title,
-.booking-title {
+.booking-title,
+.subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -56,9 +82,8 @@ body {
 .item-light {
   background-color: #83B3D312;
 }
-.advantages-title,
-.services-title,
-.subscribe-title {
+.advantages-item-title,
+.services-item-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -69,6 +94,9 @@ body {
 .services-description {
   font-size: 18px;
   line-height: 21px;
+}
+.subscribe-title {
+  color: #ffffff;
 }
 .booking-link{
   font-size: 20px;
@@ -107,7 +135,7 @@ body {
 }
 .catalog-header{
   background-image: url(../images/filter-background.jpg);
-  background-size: 100% auto;
+  background-size: 100% cover;
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #82B3D3;
@@ -118,9 +146,14 @@ body {
   line-height: 78px;
   font-weight: 700;
 }
+.breadcrumbs-link{
+  font-size: 16px;
+  line-height: 21px;
+}
 .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
 }
 .controls{
   font-size: 18px;
@@ -187,6 +220,13 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+.catalog-subscribe-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
   text-transform: uppercase;
 }
 .pagination {
