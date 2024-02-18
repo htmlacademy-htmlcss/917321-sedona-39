@@ -114,7 +114,13 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
 }
+.subscribe-email{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
 .button {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -174,6 +180,11 @@ body {
   border: none;
   text-transform: uppercase;
 }
+.control-input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
 .active-filter-button {
   background-color: #82B3D3;
 }
@@ -187,7 +198,9 @@ body {
   color: #000000;
   text-align: left;
 }
-.option-value {
+.option-value,
+.select-control {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
