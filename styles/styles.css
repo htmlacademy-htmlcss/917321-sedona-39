@@ -2087,7 +2087,9 @@ img {
 
 .modal-popover-text {
   /* Блочная модель */
-  margin: 0;
+  display: block;
+  width: 216px;
+  min-height: 100px;
 
   /* Типографика */
   font-size: 16px;
