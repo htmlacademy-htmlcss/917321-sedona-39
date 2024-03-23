@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Ксения Дудак](https://up.htmlacademy.ru/htmlcss/39/user/917321).
-* Наставник: `Неизвестно`.
+- Студент: [Ксения Дудак](https://up.htmlacademy.ru/htmlcss/39/user/917321).
+- Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
+- Сайт: (https://dxenium.github.io/917321-sedona-39/).
 
 ---
 

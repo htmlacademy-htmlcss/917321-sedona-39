@@ -18,7 +18,7 @@
         <nav class="navigation-menu">
           <ul class="navigation-list list-reset">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" aria-current="page">
+              <a class="navigation-link navigation-link-current">
                 Главная
               </a>
             </li>
@@ -101,26 +101,26 @@
             </li>
           </ul>
         </section>
-        <section class="services" data-test="service">
+        <section class="services">
           <h2 class="visually-hidden">Сервис в Седоне</h2>
           <p class="services-title">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</p>
           <p class="services-text">Опытный персонал и качественное обслуживание!</p>
           <ul class="services-list list-reset">
-            <li class="services-item item-light">
-              <h3 class="services-item-title services-item-house">
+            <li class="services-item item-light house">
+              <h3 class="services-item-title">
                 Жильё
               </h3>
               <p class="services-description">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
             </li>
-            <li class="services-item">
-              <h3 class="services-item-title services-item-food">
+            <li class="services-item food">
+              <h3 class="services-item-title">
                 Еда
               </h3>
               <p class="services-description">Всегда заказывайте <br>топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
-            <li class="services-item item-light">
-              <h3 class="services-item-title services-item-souvenir">
+            <li class="services-item item-light souvenir">
+              <h3 class="services-item-title">
                 Сувениры
               </h3>
               <p class="services-description">Не только китайского, <br>но и настоящего местного производства!</p>
@@ -211,6 +211,60 @@
           </svg>
         </a>
       </footer>
+    </div>
+    <div class="modal-container" data-test="modal">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="modal-label modal-label-from" for="modal-date-from">
+              Дата заезда:
+            </label>
+            <div class="modal-date-container modal-from-container">
+              <input class="modal-input modal-date-from" id="modal-date-from" name="modal-date-from" type="text"
+                value="27 апреля 2020" placeholder="Укажите дату" required>
+            </div>
+            <span class="validity validity-date-from wrong">Мы не можем отправить вас в прошлое.</span>
+            <label class="modal-label modal-label-to" for="modal-date-to">
+              Дата выезда:
+            </label>
+            <div class="modal-date-container modal-to-container">
+              <input class="modal-input modal-date-to" id="modal-date-to" name="modal-date-to" type="text"
+                value="1 сентября 2023" placeholder="Укажите дату" required>
+            </div>
+            <span class="validity validity-date-to correct">На эти даты есть свободные номера. Пока есть.</span>
+            <label class="modal-label modal-label-adults" for="modal-quantity-adults">
+              Взрослые:
+            </label>
+            <div class="modal-count-container modal-container-adults">
+              <button class="modal-count-minus" type="button"></button>
+              <input class="modal-input modal-quantity-adults" id="modal-quantity-adults" name="modal-quantity-adults"
+                type="text" value="2" required>
+              <button class="modal-count-plus" type="button"></button>
+            </div>
+            <label class="modal-label modal-label-childs" for="modal-quantity-childs">
+              Дети:
+              <span class="modal-info" aria-labelledby="tooltip-label-info">
+                <span class="visually-hidden">Информация</span>
+              </span>
+              <span class="popover modal-popover">
+                <p class="modal-popover-text" role="tooltip" id="tooltip-label-info">Укажите количество детей,
+                  которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              </span>
+            </label>
+            <div class="modal-count-container modal-container-childs">
+              <button class="modal-count-minus" type="button"></button>
+              <input class="modal-input modal-quantity-childs" id="modal-quantity-childs" name="modal-quantity-childs"
+                type="text" value="2">
+              <button class="modal-count-plus" type="button"></button>
+            </div>
+            <button class="modal-submit button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
