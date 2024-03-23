@@ -309,7 +309,9 @@ img {
 
 .hero-figure {
   /* Блочная модель */
-  margin: 0;
+  width: 458px;
+  height: 352px;
+  margin: 0 auto;
   padding: 51px 0 77px;
 
   /* Типографика */
@@ -767,6 +769,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   min-width: 145px;
+  max-width: 200px;
   margin-right: auto;
 }
 
@@ -963,12 +966,21 @@ img {
   border-radius: 4px;
 }
 
-.controls:hover {
+.controls:hover .control-mark {
   opacity: 0.6;
 }
 
-.controls:focus .control-mark {
+.control-mark:focus {
   outline: #83B3D3 solid 3px;
+}
+
+.control-input:disabled + .control-mark {
+  border-color: #83b3d3;
+}
+
+.control-input:focus-visible + .control-mark,
+.control-input:focus-visible + .control-input-text {
+  outline: 3px solid #83b3d3;
 }
 
 .controls:active {
@@ -1431,6 +1443,7 @@ img {
   /* Блочная модель */
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: auto 1fr auto auto auto;
   gap: 16px 20px;
   max-width: 340px;
   padding: 20px;
@@ -1616,7 +1629,7 @@ img {
 
 .pagination-more {
    /* Блочная модель */
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -1769,7 +1782,7 @@ img {
   /* Блочная модель */
   display: grid;
   grid-template-columns: 137px 110px 88px 131px 111px;
-  grid-template-rows: 48px 4px 21px 23px 48px 4px 21px 23px 48px 48px 60px;
+  grid-template-rows: 48px 4px 1fr 23px 48px 4px 1fr 23px 48px 48px 60px;
   width: 577px;
 }
 
