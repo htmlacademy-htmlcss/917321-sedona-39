@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <title>Каталог гостиниц городка Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
     <div class="container">
       <header class="catalog-header" data-test="header">
         <a class="navigation-link-logo" aria-current="page" href="index.html">
-          <img class="navigation-link-img" src="images/logo.svg" width="138" height="64" alt="Логотип города Седона">
+          <img class="navigation-link-img" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <nav class="navigation-menu">
           <ul class="navigation-list list-reset">
@@ -27,7 +28,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current">
+              <a class="navigation-link navigation-link-current" aria-current="page">
                 Гостиницы
               </a>
             </li>
@@ -57,7 +58,7 @@
           <ul class="breadcrumbs-list list-reset">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span>
-                <img src="images/home.svg" width="13" height="15" alt="Переход на главную страницу"></a>
+                <img src="images/home.svg" width="13" height="15" alt="Переход на главную страницу."></a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link current-link" aria-current="page">Гостиницы</a>
@@ -71,20 +72,23 @@
                 <ul class="catalog-filter-list list-reset">
                   <li class="catalog-filter-item">
                     <label class="controls" for="pool">
-                      <input class="control-input" type="checkbox" name="pool" id="pool" checked>
-                      Бассейн
+                      <input class="visually-hidden control-input" type="checkbox" name="pool" id="pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="controls" for="parking">
-                      <input class="control-input" type="checkbox" name="parking" id="parking" checked>
-                      Парковка
+                      <input class="visually-hidden control-input" type="checkbox" name="parking" id="parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="controls" for="Wi-Fi">
-                      <input class="control-input" type="checkbox" id="Wi-Fi" name="Wi-Fi">
-                      Wi-Fi
+                      <input class="visually-hidden control-input" type="checkbox" id="Wi-Fi" name="Wi-Fi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -94,34 +98,52 @@
                 <ul class="catalog-filter-list list-reset">
                   <li class="catalog-filter-item">
                     <label class="controls">
-                      <input class="control-input" type="radio" name="product-group" value="hotel" checked>
-                      Гостиница
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel"
+                        checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="controls">
-                      <input class="control-input" type="radio" name="product-group" value="motel">
-                      Мотель
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="controls">
-                      <input class="control-input" type="radio" name="product-group" value="apartment">
-                      Апартаменты
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="apartment">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group range-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <label class="control" id="min_coast">
-                  От
-                  <input class="control-input" name="min_coast" placeholder="0">
-                </label>
-                <label class="control" id="max_coast">
-                  До
-                  <input class="control-input" name="max_coast" placeholder="9000">
-                </label>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label min-price-label">
+                      <input class="range-input min-price" type="text" value="0" name="min-price" placeholder="0">
+                      <span class="visually-hidden">Минимальное значение</span>
+                    </label>
+                    <label class="catalog-filter-label max-price-label">
+                      <input class="range-input max-price" type="text" value="9000" name="max-price" placeholder="9000">
+                      <span class="visually-hidden">Максимальное значение</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <div class="catalog-buttons-wrap">
                 <button class="filter-button active-filter-button button" type="submit">Применить</button>
@@ -135,11 +157,13 @@
             <h2 class="catalog-title">
               Найдено гостиниц: <span>38</span>
             </h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option class="option-value" value="cheap">Сначала дешевые</option>
-              <option class="option-value" value="expensive">Сначала дорогие</option>
-              <option class="option-value" value="popular">Сначала популярные</option>
-            </select>
+            <div class="select">
+              <select class="select-control" aria-label="Сортировка.">
+                <option class="option-value" value="cheap">Сначала дешевые</option>
+                <option class="option-value" value="expensive">Сначала дорогие</option>
+                <option class="option-value" value="popular">Сначала популярные</option>
+              </select>
+            </div>
             <ul class="list-reset catalog-view-list">
               <li>
                 <a href="#" class="catalog-view-link catalog-view-selected grid-view">
@@ -162,7 +186,7 @@
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/catalog/catalog-hotel-1.jpg" width="300" height="212"
-                  alt="Звеёздное небо в горах">
+                  alt="Звеёздное небо в горах.">
               </a>
               <h3 class="hotel-card-title">
                 <a class="hotel-card-title-link" tabindex="-1" href="#">
@@ -180,7 +204,7 @@
               <div class="rating-wrapper">
                 <p class="stars for-stars">
                   <img class="hotel-stars four-stars" src="images/stars4.svg" width="140" height="37"
-                    alt="четыре звезды">
+                    alt="четыре звезды.">
                 </p>
                 <p class="hotel-rating button">Рейтинг: 8,5</p>
               </div>
@@ -188,7 +212,7 @@
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/catalog/catalog-hotel-2.jpg" width="300" height="212"
-                  alt="Радуга над горами">
+                  alt="Радуга над горами.">
               </a>
               <h3 class="hotel-card-title">
                 <a class="hotel-card-title-link" tabindex="-1" href="#">
@@ -206,7 +230,7 @@
               <div class="rating-wrapper">
                 <p class="stars four-stars">
                   <img class="hotel-stars four-stars" src="images/stars4.svg" width="140" height="37"
-                    alt="четыре звезды">
+                    alt="четыре звезды.">
                 </p>
                 <p class="hotel-rating button">Рейтинг: 9,2</p>
               </div>
@@ -214,7 +238,7 @@
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/catalog/catalog-hotel-3.jpg" width="300" height="212"
-                  alt="Рассвет в горах">
+                  alt="Рассвет в горах.">
               </a>
               <h3 class="hotel-card-title">
                 <a class="hotel-card-title-link" tabindex="-1" href="#">
@@ -231,7 +255,8 @@
               </div>
               <div class="rating-wrapper">
                 <p class="stars three-stars">
-                  <img class="hotel-stars three-stars" src="images/stars3.svg" width="140" height="37" alt="три звезды">
+                  <img class="hotel-stars three-stars" src="images/stars3.svg" width="140" height="37"
+                    alt="три звезды.">
                 </p>
                 <p class="hotel-rating button">Рейтинг: 6,9</p>
               </div>
@@ -239,7 +264,7 @@
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/catalog/catalog-hotel-4.jpg" width="300" height="212"
-                  alt="Закат и звёзды в горах">
+                  alt="Закат и звёзды в горах.">
               </a>
               <h3 class="hotel-card-title">
                 <a class="hotel-card-title-link" tabindex="-1" href="#">
@@ -256,7 +281,7 @@
               </div>
               <div class="rating-wrapper">
                 <p class="stars two-stars">
-                  <img class="hotel-stars two-stars" src="images/stars2.svg" width="140" height="37" alt="две звезды">
+                  <img class="hotel-stars two-stars" src="images/stars2.svg" width="140" height="37" alt="две звезды.">
                 </p>
                 <p class="hotel-rating button">Рейтинг: 5,0</p>
               </div>
@@ -335,8 +360,8 @@
         </ul>
         <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="developer-link" href="https://htmlacademy.ru/">
-          <svg class="developer-icon" width="115" height="34" viewBox="0 0 115 34" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg class="developer-icon" role="img" aria-label="логотип разработчика HTML Academy." width="115" height="34"
+            viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" />
             <path
               d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z" />
